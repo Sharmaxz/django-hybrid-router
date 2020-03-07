@@ -6,7 +6,7 @@ A more flexible router to django rest framework. It allows to register simple AP
 
 ## Install
 
-```pip install git+ssh://git@bitbucket.org/hub9/django-hybrid-router```
+```pip install git+https://github.com/Sharmaxz/django-hybrid-router```
 
 
 ## Usage
