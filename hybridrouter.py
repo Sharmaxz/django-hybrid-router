@@ -63,8 +63,11 @@ class HybridRouter(routers.DefaultRouter):
                 for api_view_key in api_view_urls.keys():
                     regex = api_view_urls[api_view_key].regex
                     if regex.groups == 0:
+                        url_name = api_view_urls[api_view_key].name
+                        if namespace:
+                            url_name = namespace + ':' + url_name
                         ret[api_view_key] = reverse.reverse(
-                            api_view_urls[api_view_key].name,
+                            url_name,
                             args=args,
                             kwargs=kwargs,
                             request=request,
