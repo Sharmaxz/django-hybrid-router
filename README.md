@@ -51,6 +51,3 @@ urlpatterns = [
 ```
 
 Accesing 'api/' url will show Django rest framework page listing 'car', 'drive_car' and 'driver' endpoints.
-
-
-Fork from [Django Hybrid Router](https://bitbucket.org/hub9/django-hybrid-router)
